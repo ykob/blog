@@ -11,9 +11,19 @@ div
       :sm = '6'
       )
       v-card
-        v-card-title
-          |Article Title
-        v-card-text
+        v-img(
+          class = 'align-end'
+          height = '200px'
+          )
+          v-card-title
+            |Article Title
+        v-card-subtitle(
+          class = 'pb-0'
+          )
+          |Oct 1, 2020
+        v-card-text(
+          class = 'text--primary'
+          )
           |article description text text
 </template>
 
