@@ -1,10 +1,32 @@
 <template lang="pug">
 div
-  h1
-    |Blog
   v-row(
     dense
     )
+    v-col(
+      :cols = '12'
+      :md = '4'
+      :sm = '6'
+      )
+      h1.text-h1.mb-4
+        |Blog
+      p
+        |フロントエンド開発に関する覚書
+      div
+        |Yoichi Kobayashi
+      v-btn(
+        icon
+        href = 'https://github.com/ykob'
+        )
+        v-icon
+          |mdi-github
+      v-btn(
+        icon
+        href = 'https://twitter.com/ykob0123'
+        )
+        v-icon
+          |mdi-twitter
+        
     v-col(
       :cols = '12'
       :md = '4'
