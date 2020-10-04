@@ -12,20 +12,21 @@ div
         |Blog
       p
         |フロントエンド開発に関する覚書
-      div
-        |Yoichi Kobayashi
-      v-btn(
-        icon
-        href = 'https://github.com/ykob'
-        )
-        v-icon
-          |mdi-github
-      v-btn(
-        icon
-        href = 'https://twitter.com/ykob0123'
-        )
-        v-icon
-          |mdi-twitter
+      .d-flex.align-center
+        .mr-2
+          |Yoichi Kobayashi
+        v-btn(
+          icon
+          href = 'https://github.com/ykob'
+          )
+          v-icon
+            |mdi-github
+        v-btn(
+          icon
+          href = 'https://twitter.com/ykob0123'
+          )
+          v-icon
+            |mdi-twitter
         
     v-col(
       :cols = '12'
