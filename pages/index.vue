@@ -8,22 +8,24 @@ div
       :md = '4'
       :sm = '6'
       )
-      h1.text-h1.mb-4
+      h1.text-h1.mb-8
         |Blog
-      p
+      .text-subtitle-1
         |フロントエンド開発に関する覚書
       .d-flex.align-center
-        .mr-2
+        .text-subtitle-2.mr-2
           |Yoichi Kobayashi
         v-btn(
           icon
           href = 'https://github.com/ykob'
+          target = '_blank'
           )
           v-icon
             |mdi-github
         v-btn(
           icon
           href = 'https://twitter.com/ykob0123'
+          target = '_blank'
           )
           v-icon
             |mdi-twitter
