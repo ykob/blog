@@ -1,20 +1,20 @@
 <template lang="pug">
   v-app
     v-app-bar(
-      dark
-      color = 'blue-grey darken-3'
+      color = 'white'
       app
-      elevation
+      elevation = '1'
       )
       v-toolbar-title
         |Blog
       v-spacer
       v-app-bar-nav-icon
-    v-main
+    v-main.blue-grey.lighten-5
       v-container
         nuxt
     v-footer(
-      color = 'blue-grey lighten-5'
+      dark
+      color = 'blue-grey'
       )
       v-btn(
         icon

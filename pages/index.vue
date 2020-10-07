@@ -1,8 +1,6 @@
 <template lang="pug">
 div
-  v-row(
-    dense
-    )
+  v-row
     v-col(
       v-for = 'item, i in items'
       :key = 'i'
@@ -10,7 +8,9 @@ div
       :md = '4'
       :sm = '6'
       )
-      v-card
+      v-card(
+        elevation = '1'
+        )
         v-img(
           class = 'align-end'
           height = '200px'
