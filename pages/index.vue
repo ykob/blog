@@ -4,33 +4,8 @@ div
     dense
     )
     v-col(
-      :cols = '12'
-      :md = '4'
-      :sm = '6'
-      )
-      h1.text-h1.mb-8
-        |Blog
-      .text-subtitle-1
-        |フロントエンド開発に関する覚書
-      .d-flex.align-center
-        .text-subtitle-2.mr-2
-          |Yoichi Kobayashi
-        v-btn(
-          icon
-          href = 'https://github.com/ykob'
-          target = '_blank'
-          )
-          v-icon
-            |mdi-github
-        v-btn(
-          icon
-          href = 'https://twitter.com/ykob0123'
-          target = '_blank'
-          )
-          v-icon
-            |mdi-twitter
-        
-    v-col(
+      v-for = 'item, i in items'
+      :key = 'i'
       :cols = '12'
       :md = '4'
       :sm = '6'
@@ -61,5 +36,8 @@ export default {
     Logo,
     VuetifyLogo,
   },
+  data: () => ({
+    items: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  }),
 }
 </script>
