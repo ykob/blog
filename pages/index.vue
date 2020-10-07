@@ -5,7 +5,8 @@ div
       v-for = 'item, i in items'
       :key = 'i'
       :cols = '12'
-      :md = '4'
+      :lg = '4'
+      :md = '6'
       :sm = '6'
       )
       v-card(
