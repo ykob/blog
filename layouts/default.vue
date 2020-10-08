@@ -13,8 +13,7 @@
         v-list-item
           |Menu
     v-main.blue-grey.lighten-5
-      v-container
-        nuxt
+      nuxt
     Footer
 </template>
 

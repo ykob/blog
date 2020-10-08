@@ -1,6 +1,10 @@
 <template lang="pug">
-div
-  v-row
+v-container(
+  fluid
+  )
+  v-row(
+    dense
+    )
     v-col(
       v-for = 'item, i in items'
       :key = 'i'
