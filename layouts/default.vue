@@ -24,7 +24,7 @@
             )
             v-list-item-icon
               v-icon
-                |mdi-home
+                |mdi-label
             v-list-item-title
               |Categories
           v-list-item(
