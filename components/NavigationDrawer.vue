@@ -30,6 +30,11 @@ v-navigation-drawer(
         )
         v-list-item-title
           |Menu
+    v-list-item
+      v-text-field(
+        label = '記事検索'
+        append-icon = 'mdi-magnify'
+        )
   v-divider
   v-sheet
     v-btn(
