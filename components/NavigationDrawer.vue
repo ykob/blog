@@ -41,26 +41,35 @@ v-navigation-drawer(
     dark
     color = 'transparent'
     )
-    p
-      |yoichi kobayashi
-    v-btn(
-      icon
-      href = 'https://github.com/ykob'
-      target = '_blank'
-      )
-      v-icon(
-        color = 'white'
+    div
+      v-btn(
+        href = 'https://www.tplh.net/'
+        target = '_blank'
+        x-small
+        width = '100%'
+        height = '24'
+        text
         )
-        |mdi-github
-    v-btn(
-      icon
-      href = 'https://twitter.com/ykob0123'
-      target = '_blank'
-      )
-      v-icon(
-        color = 'white'
+        |Written by Yoichi Kobayashi
+    .d-flex.justify-center
+      v-btn(
+        icon
+        href = 'https://github.com/ykob'
+        target = '_blank'
         )
-        |mdi-twitter
+        v-icon(
+          color = 'white'
+          )
+          |mdi-github
+      v-btn(
+        icon
+        href = 'https://twitter.com/ykob0123'
+        target = '_blank'
+        )
+        v-icon(
+          color = 'white'
+          )
+          |mdi-twitter
 </template>
 
 <script>
