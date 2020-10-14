@@ -16,9 +16,10 @@ v-container(
       v-card(
         elevation = '1'
         )
-        v-img(
-          class = 'align-end'
+        v-img.align-end.white--text(
+          src = 'thumb.jpg'
           height = '200px'
+          gradient = 'to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)'
           )
           v-card-title
             |Article Title
