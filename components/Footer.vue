@@ -5,6 +5,14 @@ v-footer(
   color = 'blue-grey'
   )
   v-btn(
+    href = 'https://www.tplh.net/'
+    target = '_blank'
+    x-small
+    height = '24'
+    text
+    )
+    |Written by Yoichi Kobayashi
+  v-btn(
     icon
     href = 'https://github.com/ykob'
     target = '_blank'
