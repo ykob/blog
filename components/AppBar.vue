@@ -9,7 +9,9 @@ v-app-bar(
     v-toolbar-title
       |Blog
   v-spacer
-  v-app-bar-nav-icon
+  v-app-bar-nav-icon(
+    @click = '$store.commit("toggleDrawer")'
+    )
 </template>
 
 <script>

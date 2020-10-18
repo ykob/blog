@@ -2,6 +2,7 @@
 v-navigation-drawer(
   app
   color = 'blue-grey'
+  :value = 'drawer'
   )
   v-sheet
     .text-h1.px-3.pt-2.pb-6
@@ -73,5 +74,11 @@ v-navigation-drawer(
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    drawer() {
+      return this.$store.state.drawer ? 'visible' : 'hidden'
+    },
+  },
+}
 </script>
